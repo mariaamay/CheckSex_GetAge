@@ -49,13 +49,10 @@ public class CheckSex {
         return AgeCalculator.calculateAge(birthDate, LocalDate.now());
     }
 
-    // проверяем полученный возраст на здравый смысл и добавляем суффикс
+    // добавляем суффикс
     private static String formatAge(int age) {
-        if (age < 0 || age > 110) {
-            throw new DateTimeException("Age is out of realistic bounds.");
-        }
-
         String suffix;
+
         if (age % 10 == 1) {
             suffix = " год";
         } else if (age % 10 == 2 || age % 10 == 3 || age % 10 == 4) {
