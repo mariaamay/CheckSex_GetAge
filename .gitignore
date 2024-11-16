@@ -1,0 +1,4 @@
+# Ignore IDEA files and directories
+.idea/
+CheckSex.iml
+out/
